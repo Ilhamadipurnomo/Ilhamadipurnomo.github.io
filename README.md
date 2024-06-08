@@ -52,7 +52,6 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 - **Konten column**
   ```html
   <div class="gallery-column">
-    ...
 </div>
   ```
   • <div>: Elemen div ini berfungsi sebagai kolom dalam galeri. Elemen ini membantu mengelompokkan beberapa elemen figure menjadi satu kolom.
@@ -65,9 +64,9 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
     <figcaption>Gambar Hutan</figcaption>
 </figure>
   ```
-  • <figure>: Elemen figure digunakan untuk mengelompokkan konten media dengan deskripsi atau keterangan. Dalam hal ini, figure mengelompokkan gambar dengan keterangan gambar (figcaption).
-  • <img>: Elemen img digunakan untuk menyematkan gambar. Atribut src menunjukkan path atau lokasi gambar, dan alt memberikan teks alternatif yang mendeskripsikan gambar jika gambar tidak bisa ditampilkan.
-  • <figcaption>: Elemen figcaption menyediakan keterangan atau deskripsi untuk gambar. Dalam hal ini, teks "Gambar Hutan" menjelaskan gambar yang ditampilkan di atasnya.
+  • figure: Elemen figure digunakan untuk mengelompokkan konten media dengan deskripsi atau keterangan. Dalam hal ini, figure mengelompokkan gambar dengan keterangan gambar (figcaption).
+  • img: Elemen img digunakan untuk menyematkan gambar. Atribut src menunjukkan path atau lokasi gambar, dan alt memberikan teks alternatif yang mendeskripsikan gambar jika gambar tidak bisa ditampilkan.
+  • figcaption: Elemen figcaption menyediakan keterangan atau deskripsi untuk gambar. Dalam hal ini, teks "Gambar Hutan" menjelaskan gambar yang ditampilkan di atasnya.
 
 - **Footer (Kaki Halaman)**:
   ```html
