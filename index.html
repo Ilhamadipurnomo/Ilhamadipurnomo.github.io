@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid figure {
+            margin: 0;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery-grid figcaption {
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeri Foto</h1>
+    </header>
+    <main>
+        <div class="gallery-grid">
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?forest,trees" alt="Gambar Hutan">
+                <figcaption>Gambar Hutan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?nature,water" alt="Gambar Alam">
+                <figcaption>Gambar Alam</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?city,architecture" alt="Gambar Kota">
+                <figcaption>Gambar Kota</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?mountain" alt="Gambar Gunung">
+                <figcaption>Gambar Gunung</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?beach" alt="Gambar Pantai">
+                <figcaption>Gambar Pantai</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?lake" alt="Gambar Danau">
+                <figcaption>Gambar Danau</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?desert" alt="Gambar Gurun">
+                <figcaption>Gambar Gurun</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?forest" alt="Gambar Hutan Lain">
+                <figcaption>Gambar Hutan Lain</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?river" alt="Gambar Sungai">
+                <figcaption>Gambar Sungai</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?waterfall" alt="Gambar Air Terjun">
+                <figcaption>Gambar Air Terjun</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?sunset" alt="Gambar Matahari Terbenam">
+                <figcaption>Gambar Matahari Terbenam</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?sunrise" alt="Gambar Matahari Terbit">
+                <figcaption>Gambar Matahari Terbit</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?wildlife" alt="Gambar Satwa Liar">
+                <figcaption>Gambar Satwa Liar</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?flowers" alt="Gambar Bunga">
+                <figcaption>Gambar Bunga</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?ocean" alt="Gambar Laut">
+                <figcaption>Gambar Laut</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?forest,path" alt="Gambar Jalan di Hutan">
+                <figcaption>Gambar Jalan di Hutan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?night,sky" alt="Gambar Langit Malam">
+                <figcaption>Gambar Langit Malam</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?night,city" alt="Gambar Kota Malam Hari">
+                <figcaption>Gambar Kota Malam Hari</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?stars" alt="Gambar Bintang">
+                <figcaption>Gambar Bintang</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?clouds" alt="Gambar Awan">
+                <figcaption>Gambar Awan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?autumn" alt="Gambar Musim Gugur">
+                <figcaption>Gambar Musim Gugur</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?winter" alt="Gambar Musim Dingin">
+                <figcaption>Gambar Musim Dingin</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?spring" alt="Gambar Musim Semi">
+                <figcaption>Gambar Musim Semi</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?summer" alt="Gambar Musim Panas">
+                <figcaption>Gambar Musim Panas</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?village" alt="Gambar Desa">
+                <figcaption>Gambar Desa</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?bridge" alt="Gambar Jembatan">
+                <figcaption>Gambar Jembatan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?road" alt="Gambar Jalan">
+                <figcaption>Gambar Jalan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?park" alt="Gambar Taman">
+                <figcaption>Gambar Taman</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?bird" alt="Gambar Burung">
+                <figcaption>Gambar Burung</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?fish" alt="Gambar Ikan">
+                <figcaption>Gambar Ikan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?insect" alt="Gambar Serangga">
+                <figcaption>Gambar Serangga</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?reptile" alt="Gambar Reptil">
+                <figcaption>Gambar Reptil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?mammal" alt="Gambar Mamalia">
+                <figcaption>Gambar Mamalia</figcaption>
+            </figure>
+            <figure>
+                <img src="https://source.unsplash.com/300x300/?space" alt="Gambar Luar Angkasa">
+                <figcaption>Gambar Luar Angkasa</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Galeri Foto</p>
+    </footer>
+</body>
+</html>
