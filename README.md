@@ -16,8 +16,11 @@ Ini adalah proyek website galeri foto sederhana yang dibuat menggunakan HTML dan
 
 ## Struktur Proyek
 |--assets
+
   |--(folder img)
+  
 |-- index.html
+
 |-- README.md
 
 
@@ -47,6 +50,7 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
   </main>
   ```
   • <div>: Elemen div adalah elemen blok yang digunakan sebagai kontainer untuk mengelompokkan elemen-elemen lain. Dalam hal ini, div dengan kelas gallery-grid berfungsi sebagai kontainer utama untuk elemen-elemen galeri.
+  
   • class="gallery-grid": Kelas gallery-grid digunakan untuk menerapkan gaya CSS khusus yang mengatur tata letak elemen-elemen anak di dalamnya menggunakan flexbox. Ini membantu dalam membuat tampilan galeri yang responsif dan terstruktur.
 
 - **Konten column**
@@ -55,6 +59,7 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 </div>
   ```
   • <div>: Elemen div ini berfungsi sebagai kolom dalam galeri. Elemen ini membantu mengelompokkan beberapa elemen figure menjadi satu kolom.
+    
   • class="gallery-column": Kelas gallery-column digunakan untuk menerapkan gaya CSS yang mengatur lebar dan margin kolom, serta membuat kolom tersebut berperilaku responsif sesuai dengan ukuran layar.
 
 -**figure**
@@ -65,7 +70,9 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 </figure>
   ```
   • figure: Elemen figure digunakan untuk mengelompokkan konten media dengan deskripsi atau keterangan. Dalam hal ini, figure mengelompokkan gambar dengan keterangan gambar (figcaption).
+  
   • img: Elemen img digunakan untuk menyematkan gambar. Atribut src menunjukkan path atau lokasi gambar, dan alt memberikan teks alternatif yang mendeskripsikan gambar jika gambar tidak bisa ditampilkan.
+  
   • figcaption: Elemen figcaption menyediakan keterangan atau deskripsi untuk gambar. Dalam hal ini, teks "Gambar Hutan" menjelaskan gambar yang ditampilkan di atasnya.
 
 - **Footer (Kaki Halaman)**:
@@ -89,9 +96,13 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
   }
   ```
   • font-family: Menentukan jenis font yang digunakan di seluruh halaman web. Pada contoh ini, font yang digunakan adalah Arial, atau jika tidak tersedia, font sans-serif.
+  
   • margin: Mengatur margin seluruh halaman menjadi nol, menghapus ruang default di sekitar tepi halaman.
+  
   • padding: Mengatur padding seluruh halaman menjadi nol, menghapus ruang default di dalam elemen body.
+  
   • background-color: Mengatur warna latar belakang halaman menjadi warna abu-abu gelap (#121212).
+  
   • color: Mengatur warna teks menjadi putih (#fff), sehingga kontras dengan latar belakang gelap.
 
 - **Header**:
@@ -105,8 +116,11 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • background-color: Mengatur warna latar belakang header menjadi abu-abu gelap (#333).
+
   • color: Mengatur warna teks dalam header menjadi putih (#fff) untuk kontras yang baik dengan latar belakang.
+
   • padding: Menambahkan ruang vertikal (padding) sebesar 15px di atas dan di bawah konten dalam header, membuatnya lebih terlihat dan terbaca.
+
   •text-align: Mengatur teks dalam header agar rata tengah (centered), memberikan tampilan yang simetris dan terpusat.
 
 **`main`*:
@@ -119,7 +133,9 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • padding: Menambahkan ruang di dalam elemen main sebesar 20px, memberikan ruang antara konten dan tepi elemen.
+  
   • max-width: Mengatur lebar maksimum elemen main menjadi 1200px, memastikan elemen tidak menjadi terlalu lebar pada layar yang besar.
+  
   • margin: Mengatur margin otomatis (auto) untuk elemen main, sehingga elemen ini terpusat secara horizontal di dalam elemen induknya.
 
 **`gallery-grid`**:
@@ -132,8 +148,11 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • .gallery-grid { ... }: Ini mengatur gaya untuk elemen dengan kelas gallery-grid.
+  
   • display: flex;: Mengatur elemen ini untuk menggunakan model tata letak fleksibel. Dengan kata lain, elemen ini dan anak-anaknya akan diatur menggunakan aturan tata letak flexbox, yang memudahkan pengaturan elemen dalam baris atau kolom.
+  
   • flex-wrap: wrap;: Memungkinkan elemen anak di dalam gallery-grid untuk membungkus ke baris baru jika mereka tidak muat dalam satu baris. Tanpa properti ini, elemen anak akan tetap dalam satu baris, bahkan jika mereka melampaui lebar elemen induk.
+  
   • justify-content: space-between;: Mengatur jarak antara elemen anak dalam elemen gallery-grid. Properti ini memastikan bahwa elemen anak didistribusikan secara merata dengan ruang yang sama di antara mereka. Ruang ekstra akan dibagi secara merata antara elemen anak, sehingga elemen pertama berada di awal dan elemen terakhir berada di akhir baris.
 
 - **galery column**:
@@ -145,6 +164,7 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • flex: Menentukan ukuran elemen flex anak. Dalam hal ini, elemen mengambil 48% dari lebar container, dengan pertumbuhan dan penyusutan yang tidak diizinkan (0 0).
+
   • margin: Menambahkan margin sebesar 1% di sekitar elemen, memberikan ruang antara kolom galeri.
 
 **galery column figure**
@@ -164,12 +184,19 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • .gallery-column figure { ... }: Ini mengatur gaya untuk elemen figure yang berada di dalam elemen dengan kelas gallery-column.
+  
   • margin: 0 0 20px 0;: Mengatur margin (jarak luar) untuk elemen figure. Margin atas adalah 0, margin kanan adalah 0, margin bawah adalah 20 piksel, dan margin kiri adalah 0. Ini berarti elemen figure akan memiliki jarak 20 piksel dari elemen di bawahnya.
+  
   • background: #333;: Mengatur latar belakang elemen figure dengan warna abu-abu gelap (#333).
+  
   • border-radius: 10px;: Mengatur sudut elemen figure menjadi melengkung dengan radius 10 piksel, memberikan efek sudut yang lebih halus.
+  
   • overflow: hidden;: Menyembunyikan bagian konten yang melampaui batas elemen figure. Ini berguna untuk memastikan bahwa gambar atau konten lain di dalam figure tidak keluar dari batas elemen tersebut.
+  
   • box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);: Menambahkan bayangan pada elemen figure. Bayangan ini memiliki offset vertikal 4 piksel, offset horizontal 0 piksel, blur radius 8 piksel, dan warna bayangan hitam dengan opasitas 10%. Ini memberikan efek bayangan halus di bawah elemen, membuatnya terlihat lebih tiga dimensi.
+  
   • transition: transform 0.2s;: Mengatur efek transisi pada properti transform selama 0.2 detik. Ini berarti jika elemen figure berubah posisi atau skala (misalnya saat di-hover), perubahan tersebut akan terjadi secara halus selama 0.2 detik.
+  
   • transform: Mengatur transformasi elemen figure ketika di-hover, memperbesar ukuran elemen sebesar 5% untuk memberikan efek zoom.
 
 - **gaya gallery-column bagian img**:
@@ -182,8 +209,11 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • .gallery-column img { ... }: Ini mengatur gaya untuk elemen img (gambar) yang berada di dalam elemen dengan kelas gallery-column.
+
   • width: 100%;: Mengatur lebar gambar agar selalu 100% dari lebar elemen induknya. Ini berarti gambar akan secara otomatis menyesuaikan lebarnya agar sesuai dengan lebar elemen tempatnya berada, memastikan tidak ada bagian gambar yang terpotong atau melampaui batas.
+
   • height: auto;: Mengatur tinggi gambar agar otomatis menyesuaikan berdasarkan aspek rasio aslinya. Ini memastikan gambar tidak akan terlihat terdistorsi atau terjepit meskipun lebar gambar berubah.
+
   • display: block;: Mengubah cara gambar ditampilkan dari tampilan default inline menjadi block. Ini berarti gambar akan mengisi seluruh lebar elemen induknya dan tidak ada elemen lain yang bisa berada di sampingnya. Juga, ini menghilangkan celah kecil yang biasanya muncul di bawah gambar jika tetap sebagai inline.
 
 **figcaption**:
@@ -197,8 +227,11 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • padding: Menambahkan ruang di dalam elemen figcaption sebesar 10px untuk memberikan ruang antara teks dan tepi elemen.
+  
   • font-size: Mengatur ukuran font teks dalam figcaption menjadi 14px.
+  
   • color: Mengatur warna teks dalam figcaption menjadi abu-abu terang (#ccc) untuk kontras yang lembut dengan latar belakang.
+  
   • text-align: Mengatur teks dalam figcaption agar rata tengah.
   
 **footer**
@@ -213,9 +246,13 @@ Anda dapat menyesuaikan galeri dengan mengubah atau menambahkan gambar pada div 
 
   ```
   • background-color: Mengatur warna latar belakang footer menjadi abu-abu gelap (#333).
+  
   • color: Mengatur warna teks dalam footer menjadi putih (#fff) untuk kontras yang baik dengan latar belakang.
+  
   • text-align: Mengatur teks dalam footer agar rata tengah.
+  
   • padding: Menambahkan ruang vertikal (padding) sebesar 10px di atas dan di bawah konten dalam footer, membuatnya lebih terlihat dan terbaca.
+  
   • margin-top: Menambahkan ruang (margin) sebesar 20px di atas footer untuk memberikan jarak antara elemen sebelumnya dan footer.
   
 **mengatur tampilan smartphone**
